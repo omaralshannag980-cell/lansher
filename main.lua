@@ -252,7 +252,8 @@ for i = 1, num2 do
 
     local TimeLabel = Instance.new("TextLabel")
     TimeLabel.Size = UDim2.new(0.75, 0, 1, 0)
-    TimeLabel.Position = UDim2.new(0.25, 0, 0, 0)
+    -- ✅ التعديل: زحزحة الوقت على اليسار 40 بكسل عشان يبين كامل
+    TimeLabel.Position = UDim2.new(0.25, -40, 0, 0)
     TimeLabel.BackgroundTransparency = 1
     TimeLabel.Font = Enum.Font.GothamBold
     TimeLabel.TextColor3 = Color3.fromRGB(255, 100, 100)
